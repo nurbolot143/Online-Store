@@ -1,20 +1,24 @@
 import React from "react";
-import Card from "../components/Card";
+import Intro from "../components/Intro";
 import cardList from "../cardList";
 import Section from "../components/Section";
-import Intro from "../components/Intro";
+import Card from "../components/Card";
 
-const Home = () => {
+const Men = () => {
   return (
-    <div className="home">
+    <div className="men">
       <Intro />
-      <Section title="Deals of the day">
+      <Section title="BIGGEST DEALS ON TOP BRANDS">
         {cardList.map((e) => {
           return <Card key={e.id} img={e.download_url} />;
         })}
       </Section>
-
       <Section title="Categeries to bag">
+        {cardList.map((e) => {
+          return <Card key={e.id} img={e.download_url} />;
+        })}
+      </Section>
+      <Section title="EXPLORE TOP BRANDS">
         {cardList.map((e) => {
           return <Card key={e.id} img={e.download_url} />;
         })}
@@ -23,4 +27,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Men;

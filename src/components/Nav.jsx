@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const Item = (props) => {
     return (
       <li className="navbar__item">
-        <a href="/" className="navbar__link">
+        <Link to={`${props.to}`} className="navbar__link">
           {props.name}
-        </a>
+        </Link>
       </li>
     );
   };
@@ -14,9 +15,9 @@ const Nav = () => {
   return (
     <nav className="navbar">
       <ul className="navbar__list">
-        <Item name="Men" />
-        <Item name="Women" />
-        <Item name="Kids" />
+        <Item to="/men" name="Men" />
+        <Item to="/women" name="Women" />
+        <Item to="/kids" name="Kids" />
       </ul>
     </nav>
   );

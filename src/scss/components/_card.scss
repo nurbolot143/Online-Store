@@ -1,0 +1,19 @@
+.card {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 20px;
+    width: 240px;
+    height: 300px;
+  }
+
+  &__img {
+    width: inherit;
+    height: inherit;
+  }
+}

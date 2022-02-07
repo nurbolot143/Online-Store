@@ -5,6 +5,7 @@
 }
 
 .header {
+  z-index: 1;
   margin-top: -60px;
   position: fixed;
   width: 100%;
@@ -14,10 +15,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &-scroll {
-      border-bottom: 3px solid #e0002d;
-    }
   }
 }
 
@@ -29,7 +26,6 @@
 
   &__item {
     padding: 15px 10px 0 10px;
-    margin-bottom: -3px;
     height: 60px;
 
     transition: 0.4s;
@@ -69,6 +65,47 @@
 
     &:hover {
       color: #e0002d;
+    }
+  }
+}
+
+.person {
+  position: relative;
+
+  &__wrapper {
+    font-size: 30px;
+    color: black;
+
+    &:hover .person__icon {
+      color: #e0002d;
+    }
+  }
+
+  &__submenu {
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    width: 220px;
+    margin-left: -90px;
+    padding: 0 30px 0 30px;
+
+    &-show {
+      visibility: visible;
+    }
+
+    &-item {
+      padding: 10px 0;
+      cursor: pointer;
+
+      & + & {
+        border-top: 1px solid #e0002d;
+      }
+    }
+
+    & a {
+      text-decoration: none;
+      font-size: 18px;
+      color: rgb(68, 66, 66);
     }
   }
 }

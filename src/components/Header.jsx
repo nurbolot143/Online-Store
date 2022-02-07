@@ -1,21 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.jpg";
 import Nav from "./Nav";
 import User from "./User";
 
 const Header = () => {
-  const [scroll, setScroll] = useState("header__inner");
-  window.addEventListener("scroll", (e) => {
-    setScroll("header__inner header__inner-scroll");
-  });
-
   return (
     <header className="header">
       <div className="container">
-        <div className={scroll}>
-          <div className="logo">
+        <div className="header__inner">
+          <Link to="/" className="logo">
             <img src={logo} alt="logo" />
-          </div>
+          </Link>
           <Nav />
           <User />
         </div>

@@ -1,0 +1,55 @@
+.footer {
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(22, 21, 21);
+  }
+
+  &__item {
+    margin: 15px;
+    color: rgb(68, 66, 66);
+  }
+
+  &__link {
+    color: inherit;
+    transition: 0.3s;
+
+    &:hover {
+      color: black;
+      font-weight: 600;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    &-store {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img {
+    height: 40px;
+  }
+
+  &__bottom {
+    padding: 5px 0;
+    text-align: center;
+    background-color: rgb(68, 66, 66);
+  }
+}

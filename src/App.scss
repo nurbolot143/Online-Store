@@ -1,5 +1,10 @@
 @import "./scss/components/header.scss";
 @import "./scss/components/intro";
+@import "./scss/components/card";
+@import "./scss/components/section";
+@import "./scss/components/footer";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 * {
   box-sizing: border-box;
@@ -13,7 +18,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 1140px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 15px;
 }
