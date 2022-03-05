@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import PersonIcon from "@mui/icons-material/Person";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import { Link } from "@mui/material";
 
 const User = () => {
@@ -16,14 +16,14 @@ const User = () => {
   return (
     <div className="user">
       <ul className="user__list">
-        <li className="user__item">
+        <li className="user__item user__person">
           <div className="person">
             <div
               onMouseEnter={handleShow}
               onMouseLeave={handleShow}
               className="person__wrapper"
             >
-              <PersonIcon className="person__icon" fontSize="inherit" />
+              <PersonOutlineIcon className="person__icon" fontSize="inherit" />
               <ul className={`person__submenu ${showClass}`}>
                 <li className="person__submenu-item">
                   <Link>Pofile</Link>
@@ -41,16 +41,18 @@ const User = () => {
             </div>
           </div>
         </li>
-        <li className="user__item">
-          <a href="/" className="user__link">
-            <FavoriteIcon fontSize="inherit" />
-          </a>
-        </li>
-        <li className="user__item">
-          <a href="/" className="user__link">
-            <ShoppingBagIcon fontSize="inherit" />
-          </a>
-        </li>
+        <div className="users">
+          <li className="user__item">
+            <a href="/" className="user__link">
+              <FavoriteBorderIcon fontSize="inherit" />
+            </a>
+          </li>
+          <li className="user__item">
+            <a href="/" className="user__link">
+              <ShoppingBagOutlinedIcon fontSize="inherit" />
+            </a>
+          </li>
+        </div>
       </ul>
     </div>
   );

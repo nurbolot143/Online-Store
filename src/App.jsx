@@ -11,7 +11,7 @@ import "./App.scss";
 const App = () => {
   return (
     <div className="App">
-      <Header />
+      <Header isLock />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="men" element={<Men />} />
