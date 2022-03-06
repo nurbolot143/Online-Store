@@ -10,13 +10,13 @@ const Home = () => {
       <Intro />
       <Section title="Deals of the day">
         {cardList.map((e) => {
-          return <Card key={e.id} img={e.download_url} />;
+          return <Card key={e.id} img={e.download_url} title={e.author} />;
         })}
       </Section>
 
       <Section title="Categeries to bag">
         {cardList.map((e) => {
-          return <Card key={e.id} img={e.download_url} />;
+          return <Card key={e.id} img={e.download_url} title={e.author} />;
         })}
       </Section>
     </div>

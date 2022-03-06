@@ -1,9 +1,26 @@
 .intro {
   padding: 40px 0;
-  width: 95vw;
   margin: 0 auto;
 
+  &__link {
+    max-height: 400px;
+    width: 100vw;
+    padding: 0 10px;
+  }
+
   & img {
-    width: 100%;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .intro {
+    padding: 0;
   }
 }

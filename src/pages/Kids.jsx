@@ -10,17 +10,17 @@ const Kids = () => {
       <Intro />
       <Section title="FASHION & ESSENTIALS">
         {cardList.map((e) => {
-          return <Card key={e.id} img={e.download_url} />;
+          return <Card key={e.id} img={e.download_url} title={e.author} />;
         })}
       </Section>
       <Section title="EXPLORE MORE">
         {cardList.map((e) => {
-          return <Card key={e.id} img={e.download_url} />;
+          return <Card key={e.id} img={e.download_url} title={e.author} />;
         })}
       </Section>
       <Section title="THE KIDS SPACE">
         {cardList.map((e) => {
-          return <Card key={e.id} img={e.download_url} />;
+          return <Card key={e.id} img={e.download_url} title={e.author} />;
         })}
       </Section>
     </div>

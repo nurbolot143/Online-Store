@@ -1,3 +1,5 @@
+@import "../vars";
+
 .footer {
   &__inner {
     display: flex;
@@ -9,7 +11,7 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 15px;
-    color: rgb(22, 21, 21);
+    color: #000;
   }
 
   &__item {
@@ -22,7 +24,7 @@
     transition: 0.3s;
 
     &:hover {
-      color: black;
+      color: #000;
       font-weight: 600;
     }
   }
@@ -51,5 +53,13 @@
     padding: 5px 0;
     text-align: center;
     background-color: rgb(68, 66, 66);
+  }
+}
+
+@media (max-width: 310px) {
+  .footer {
+    &__inner {
+      justify-content: start;
+    }
   }
 }

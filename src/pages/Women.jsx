@@ -10,22 +10,22 @@ const Women = () => {
       <Intro />
       <Section title="BIGGEST DEALS ON TOP BRANDS">
         {cardList.map((e) => {
-          return <Card key={e.id} img={e.download_url} />;
+          return <Card key={e.id} img={e.download_url} title={e.author} />;
         })}
       </Section>
       <Section title="Categeries to bag">
         {cardList.map((e) => {
-          return <Card key={e.id} img={e.download_url} />;
+          return <Card key={e.id} img={e.download_url} title={e.author} />;
         })}
       </Section>
       <Section title="EXPLORE TOP BRANDS">
         {cardList.map((e) => {
-          return <Card key={e.id} img={e.download_url} />;
+          return <Card key={e.id} img={e.download_url} title={e.author} />;
         })}
       </Section>
       <Section title="TRENDING IN ACCESSORIES">
         {cardList.map((e) => {
-          return <Card key={e.id} img={e.download_url} />;
+          return <Card key={e.id} img={e.download_url} title={e.author} />;
         })}
       </Section>
     </div>

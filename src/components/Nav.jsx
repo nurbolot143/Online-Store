@@ -13,8 +13,6 @@ const Nav = (props) => {
     );
   };
 
-  console.log(props.class);
-
   return (
     <nav className={`header__menu ${props.isActiveClass}`}>
       <ul className="header__list">

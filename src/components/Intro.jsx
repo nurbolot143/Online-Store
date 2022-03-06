@@ -1,5 +1,5 @@
 import React from "react";
-import tShirt from "../assets/img/t-shirt.jpg";
+import introList from "../introList";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 
@@ -11,24 +11,19 @@ const Intro = () => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
-    autoplaySpeed: 10000,
+    autoplaySpeed: 6000,
     cssEase: "linear",
   };
-
-  const SliderCard = (props) => {
-    return (
-      <Link to="/" className="intro__link">
-        <img src={props.img} alt="" />
-      </Link>
-    );
-  };
-
   return (
     <section className="intro">
       <Slider {...sliderSettings}>
-        <SliderCard img={tShirt} />
-        <SliderCard img={tShirt} />
-        <SliderCard img={tShirt} />
+        {introList.map((el) => {
+          return (
+            <Link to="/" className="intro__link" key={el.id}>
+              <img src={el.download_url} alt="" />
+            </Link>
+          );
+        })}
       </Slider>
     </section>
   );
