@@ -70,7 +70,7 @@
   }
 }
 
-.user {
+.userNav {
   z-index: 3;
   &__list {
     display: flex;
@@ -87,51 +87,6 @@
 
     &:hover {
       color: $accent-color;
-    }
-  }
-}
-
-.users {
-  display: flex;
-}
-
-.person {
-  position: relative;
-
-  &__wrapper {
-    font-size: 30px;
-    color: $dark;
-
-    &:hover .person__icon {
-      color: $accent-color;
-    }
-  }
-
-  &__submenu {
-    visibility: hidden;
-    position: absolute;
-    background-color: $light;
-    width: 220px;
-    margin-left: -90px;
-    padding: 0 30px 0 30px;
-
-    &-show {
-      visibility: visible;
-    }
-
-    &-item {
-      padding: 10px 0;
-      cursor: pointer;
-
-      & + & {
-        border-top: 1px solid $accent-color;
-      }
-    }
-
-    a {
-      text-decoration: none;
-      font-size: 18px;
-      color: rgb(68, 66, 66);
     }
   }
 }
@@ -228,42 +183,9 @@
     }
   }
 
-  .user {
-    &__list {
-      flex-direction: row-reverse;
-    }
-
+  .userNav {
     &__link {
       color: $light;
-    }
-  }
-
-  .person {
-    &__icon {
-      visibility: hidden;
-    }
-
-    &__submenu {
-      padding: 0;
-      visibility: visible;
-      background-color: inherit;
-      color: $light;
-
-      &-item {
-        padding: 0;
-        & + & {
-          border: none;
-        }
-      }
-
-      a {
-        color: $light;
-        font-size: 23px;
-
-        &:hover {
-          color: $accent-color;
-        }
-      }
     }
   }
 }

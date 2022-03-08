@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import User from "./User";
+import UserNav from "./UserNav";
 
 const Nav = (props) => {
   const Item = (prop) => {
@@ -20,7 +20,7 @@ const Nav = (props) => {
         <Item to="/women" name="Women" />
         <Item to="/kids" name="Kids" />
       </ul>
-      <User />
+      <UserNav />
     </nav>
   );
 };
