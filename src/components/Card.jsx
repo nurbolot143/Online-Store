@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Card = (props) => {
   return (
     <a href="/deals" className="card__item">
